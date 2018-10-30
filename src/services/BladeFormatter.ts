@@ -21,7 +21,7 @@ export class BladeFormatter
         let output: string = inuptText;
 
         // block pattern
-        let patternBlock = /(\@)(inject|extends|section|hasSection|include|stop|endpush|endphp)/g;
+        let patternBlock = /(\@)(inject|extends|section|hasSection|include|stop|endpush|if|else|endif|php|endphp)/g;
 
         // blade format fix
         output = output.replace(patternBlock, function (match: string) {
